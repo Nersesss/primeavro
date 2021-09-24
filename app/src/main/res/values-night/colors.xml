@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="appColor">#ffca28</color>
+    <color name="white">#000000</color>
+    <color name="black">#FFFFFF</color>
+    <color name="logoTextColor">#EDE5EF</color>
+    <color name="gray">#C9C9C9</color>
+    <color name="green">#2F7E1D</color>
+    <color name="lightGray">#121212</color>
+    <color name="colorWhiteOnly">#FFFFFF</color>
+    <color name="toolbarColor">#121212</color>
+    <color name="appGreen">#56B48C</color>
+    <color name="hintColor">#D6D6D6</color>
+    <color name="transparentWhite">#19FFFFFF</color>
+    <color name="endColor">#000000</color>
+    <color name="startColor">#51000000</color>
+</resources>

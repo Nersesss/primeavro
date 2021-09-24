@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">PrimeAvto</string>
+    <string name="title_activity_cars">CarsActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="all_cars">все машины</string>
+
+    <string name="search">Поиск</string>
+    <string name="menu">Меню</string>
+    <string name="characteristics">Характеристики автомобиля</string>
+    <string name="additionalServices">Дополнительные услуги</string>
+    <string name="rentTerms">Условия аренды</string>
+    <string name="priceBy">Сумма по</string>
+    <string name="valutaRu"> ₽</string>
+    <string name="_cancel">Отмена</string>
+    <string name="refresh">Обновить</string>
+    <string name="error">Ошибка</string>
+    <string name="message">подключение к Интернету отсутствует</string>
+    <string name="about">О Компании</string>
+
+    <string name="e_mail">E-mail</string>
+    <string name="phone">Телефон</string>
+    <string name="star_app">Оценить приложение</string>
+    <string name="page_url">https:/primeavto.su/</string>
+    <string name="version">Версия:</string>
+    <string name="permission_denied">Доступ запрещен</string>
+    <string name="book">Забронируйте</string>
+    <string name="book_info">Выберите любой автомобиль и оформите бронь на него. Укажите свои контактные данные и сроки поездки. Менеджер свяжется с Вами и подтвердит заказ. Сообщите менеджеру желаемое время и место получения автомобиля.</string>
+    <string name="Inspect_and_receive_info">Чистый и заправленный автомобиль вы сможете забрать в нашем офисе или машина будет доставлена нашим сотрудником. Осмотрите автомобиль вместе с представителем компании на наличие повреждений. Зафиксируйте состояние автомобиля в протоколе. Внесите оплату за автомобиль.</string>
+    <string name="use_info">Приятной поездки! По истечению срока аренды, привезите автомобиль в офис компании или вызовите нашего сотрудника - он сам заберет автомобиль в удобном вам месте. Зафиксируйте состояние автомобиля в протоколе.</string>
+    <string name="Inspect_and_receive">Осмотрите и получите</string>
+    <string name="use">Пользуйтесь</string>
+    <string name="send">Отправить</string>
+    <string name="phone_number">Телефонный номер</string>
+    <string name="front">Фронт</string>
+    <string name="back">Обратно</string>
+    <string name="wrong_activation_code">Неверный код активаций</string>
+    <string name="logout">Выйти</string>
+    <string name="rent">Заказать</string>
+    <string name="something_went_wrong">Что то пошло не так!</string>
+    <string name="success">Удачно</string>
+    <string name="dl">Водительское удостоверение</string>
+    <string name="days_number">Количество дней</string>
+    <string name="car_price">Стоимость авто</string>
+    <string name="washing">Мойка(обязателен)</string>
+    <string name="pay">Оплатить</string>
+    <string name="full_price">Общая стоимость</string>
+    <string name="autorization_message">Пожалуйста подождите, идет авторизация</string>
+    <string name="feal_all_fealds">Пожалуйста заполните все поля</string>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_navigation"
+    app:startDestination="@+id/navigation_cars">
+
+    <fragment
+        android:id="@+id/navigation_cars"
+        android:name="com.su.primeavto.view.fragment.CarsFragment"
+        tools:layout="@layout/fragment_cars" />
+
+    <fragment
+        android:id="@+id/navigation_menu"
+        android:name="com.su.primeavto.view.fragment.MenuFragment"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_navigation_menu_to_navigation_about"
+            app:destination="@id/navigation_about" />
+        <action
+            android:id="@+id/action_navigation_menu_to_navigation_rent_terms"
+            app:destination="@id/navigation_rent_terms" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_rent_terms"
+        android:name="com.su.primeavto.view.fragment.RentTermsFragment"
+        tools:layout="@layout/fragment_rent_terms" />
+
+    <fragment
+        android:id="@+id/navigation_about"
+        android:name="com.su.primeavto.view.fragment.AboutFragment"
+        tools:layout="@layout/fragment_about" />
+
+</navigation>

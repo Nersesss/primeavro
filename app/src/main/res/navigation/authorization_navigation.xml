@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/navigation_phone"
+    android:id="@+id/authorization_navigation">
+
+
+    <fragment
+        android:id="@+id/navigation_phone"
+        android:name="com.su.primeavto.view.fragment.PhoneValidationFragment"
+        tools:layout="@layout/fragment_phone_validation">
+        <action
+            android:id="@+id/action_navigation_phone_to_navigation_otp"
+            app:destination="@id/navigation_otp" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_otp"
+        android:name="com.su.primeavto.view.fragment.OTPValidationFragment"
+        tools:layout="@layout/fragment_otp_validation">
+
+        <action
+            android:id="@+id/action_navigation_otp_to_navigation_id"
+            app:destination="@id/navigation_id" />
+        <action
+            android:id="@+id/action_navigation_otp_to_navigation_phone"
+            app:destination="@id/navigation_phone" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_id"
+        android:name="com.su.primeavto.view.fragment.IDValidationFragment"
+        tools:layout="@layout/fragment_id_validation">
+        <action
+            android:id="@+id/action_navigation_id_to_navigation_otp"
+            app:destination="@id/navigation_otp" />
+    </fragment>
+
+
+</navigation>

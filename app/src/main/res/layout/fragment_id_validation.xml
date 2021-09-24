@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_app_bg"
+        tools:context=".view.fragment.OTPValidationFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_send"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <LinearLayout
+                android:id="@+id/layout_id_front"
+                android:layout_width="150dp"
+                android:layout_height="140dp"
+                android:layout_margin="@dimen/margin_8dp"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:background="@drawable/white_bg_left_radius"
+                android:padding="@dimen/margin_8dp"
+                app:layout_constraintBottom_toTopOf="@+id/layout_dl_front"
+                app:layout_constraintEnd_toStartOf="@+id/layout_id_back"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/img_front"
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/text_front"
+                    app:srcCompat="@drawable/ic_id_card"
+                    app:tint="@color/black" />
+
+
+                <TextView
+                    android:id="@+id/text_front"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/front"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/img_front"
+                    app:layout_constraintStart_toStartOf="@+id/img_front"
+                    app:layout_constraintTop_toBottomOf="@+id/img_front" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_id_back"
+                android:layout_width="150dp"
+                android:layout_height="140dp"
+                android:layout_margin="@dimen/margin_8dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:background="@drawable/white_bg_right_radius"
+                android:padding="@dimen/margin_8dp"
+                app:layout_constraintBottom_toTopOf="@+id/layout_dl_selfie"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/layout_id_front"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/img_back"
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/ic_id_card"
+                    app:tint="@color/black"
+                    app:layout_constraintBottom_toTopOf="@+id/text_back"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/text_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/back"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/img_back"
+                    app:layout_constraintStart_toStartOf="@+id/img_back"
+                    app:layout_constraintTop_toBottomOf="@+id/img_back" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_dl_front"
+                android:layout_width="150dp"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_height="140dp"
+                android:layout_margin="@dimen/margin_8dp"
+                android:background="@drawable/white_bg_left_radius"
+                android:padding="@dimen/margin_8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/layout_dl_selfie"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layout_id_front">
+
+                <ImageView
+                    android:id="@+id/img_dl"
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/ic_id_card"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/text_dl"
+                    app:tint="@color/black"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/text_dl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/dl"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/img_dl"
+                    app:layout_constraintStart_toStartOf="@+id/img_dl" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_dl_selfie"
+                android:layout_width="150dp"
+                android:layout_height="140dp"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/margin_8dp"
+                android:gravity="center_horizontal"
+                android:background="@drawable/white_bg_right_radius"
+                android:padding="@dimen/margin_8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/layout_dl_front"
+                app:layout_constraintTop_toBottomOf="@+id/layout_id_back">
+
+                <ImageView
+                    android:id="@+id/img_dl_selfie"
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/ic_id_card"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tint="@color/black" />
+
+                <TextView
+                    android:id="@+id/text_dl_selfie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/back"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/img_dl_selfie"
+                    app:layout_constraintStart_toStartOf="@+id/img_dl_selfie"
+                    app:layout_constraintTop_toBottomOf="@+id/img_dl_selfie" />
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.dx.dxloadingbutton.lib.LoadingButton
+            android:id="@+id/btn_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margin_16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:lb_btnColor="@color/appRed"
+            app:lb_btnDisabledColor="@color/appRed"
+            app:lb_btnText="@string/send"
+            app:lb_cornerRadius="32dp"
+            app:lb_disabledTextColor="@color/white"
+            app:lb_resetAfterFailed="true"
+            app:lb_rippleEnable="false"
+            app:lb_textColor="@color/white" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

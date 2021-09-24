@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CustomEditView">
+        <attr name="hint" format="string" />
+        <attr name="text" format="string" />
+        <attr name="title" format="string" />
+
+        <attr name="isLeftIconChangeable" format="boolean"/>
+        <attr name="isEditText" format="boolean"/>
+
+        <attr name="iconColor" format="color"/>
+        <attr name="viewBG" format="reference"/>
+        <attr name="titleTextColor" format="color"/>
+
+        <attr name="inputType" format="integer">
+            <enum name="phone" value="0x00000003" />
+            <enum name="text" value="0x00000001" />
+            <enum name="number" value="0x00000002" />
+            <enum name="password" value="0x00000080" />
+        </attr>
+        <attr name="countryCodeVisibility" format="integer">
+            <enum name="visible" value="0x00000000" />
+            <enum name="invisible" value="0x00000004" />
+            <enum name="gone" value="0x00000008" />
+        </attr>
+
+        <attr name="cleanable" format="integer">
+            <enum name="visible" value="0x00000000" />
+            <enum name="invisible" value="0x00000004" />
+            <enum name="gone" value="0x00000008" />
+        </attr>
+        <attr name="showChangeButton" format="boolean">
+            <enum name="visible" value="0x00000000" />
+            <enum name="invisible" value="0x00000004" />
+            <enum name="gone" value="0x00000008" />
+        </attr>
+        <attr name="android:src" />
+        <attr name="drawableEnd" format="reference"/>
+        <attr name="android:layout_height" />
+        <attr name="isInputEnabled" format="boolean" />
+
+
+    </declare-styleable>
+
+</resources>
